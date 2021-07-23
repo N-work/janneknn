@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+</head>
+<body>
+<input type="button" value="グー" onclick="aa()">
+<input type="button" value="チョキ" onclick="bb()">
+<input type="button" value="パー" onclick="cc()">
+<script>
+function aa(){
+    const a = Math.floor (Math.random() *3);
+ if (a == 0){
+     alert("相手はグー　あいこ");
+ }
+ if (a == 1){
+     alert("相手はチョキ　勝ち");
+ }
+ if (a == 2){
+     alert("相手はパー　負け")
+ }
+}
+function bb(){
+    const a = Math.floor (Math.random() *3);
+ if (a == 0){
+     alert("相手はグー　負け");
+ }
+ if (a == 1){
+     alert("相手はチョキ　あいこ");
+ }
+ if (a == 2){
+     alert("相手はパー　勝ち")
+ }
+}
+function cc(){
+    const a = Math.floor (Math.random() *3);
+ if (a == 0){
+     alert("相手はグー　勝ち");
+ }
+ if (a == 1){
+     alert("相手はチョキ　負け");
+ }
+ if (a == 2){
+     alert("相手はパー　あいこ")
+ }
+}
+</script>
+<style>
+    input{
+    font-size : 100px;
+    color : blue;
+    }
+    body{
+    background-color : lime;    
+    }
+    </style>
+</body>
+</html>
